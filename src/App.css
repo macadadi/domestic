@@ -63,9 +63,16 @@ margin: 0px;
 .service-page{
   background-color: whitesmoke;
 }
+.service-item-d{
+  border-radius: 10px;
+}
 
+.service-item p{
+  font-size: 15px;
+  font-weight: 600;
+}
 @media screen and (max-width: 600px) {
-  .get-started {
-   
+  .get-startedpp {
+    background-color: rgb(232, 245, 198);
   }
 }

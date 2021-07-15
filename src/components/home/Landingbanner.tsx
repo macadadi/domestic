@@ -20,7 +20,7 @@ function Landingbanner():JSX.Element {
 
                  </div>
             </div>
-            <div className="landind-right col-md-6">
+            <div className="landind-right col-md-6 pb-4 mb-4">
               <div className="outer">
                   <div className="inner">
                      <img src={phonep} />
