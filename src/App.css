@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+body{
+  padding: 0px;
+  margin: 0px;
+  background-color: rgb(243, 226, 226);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-bar{
+  background-color: rgb(247, 243, 243);
+}
+.our-product{
+  list-style: none;
+}
+.our-product li {
+cursor: pointer;
+padding: 5px;
+padding-bottom: 0px;
+border-radius: 10px;
+transition: 2s ;
+}
+.our-product li:hover{
+background-color: gray;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.landing-banner h1{
+  font-size: 9vmin;
+  font-weight: 800;
+
+}
+.landing-banner p{
+font-size: 3vmin;
+padding: 0px;
+margin: 0px;
+}
+.landing-banner {
+  background-color: rgb(243, 226, 226);
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.p-div{
+  padding: 20px 0px;
+  
+}
+
+
+.btn-start{
+  background-color: rgb(69, 185, 69);
+  font-size: 30px;
+  border: none;
+  border-radius: 10px;
   color: white;
 }
+.btn-watch{
+  border: none;
+  font-size: 20px;
+  background-color: transparent;
+  color: green;
 
-.App-link {
-  color: #61dafb;
+}
+.outer{
+  margin-top: 20px;
+}
+/* service page styles */
+.service-page{
+  background-color: whitesmoke;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (max-width: 600px) {
+  .get-started {
+   
   }
 }
