@@ -67,12 +67,72 @@ margin: 0px;
   border-radius: 10px;
 }
 
+.service-item-d :hover .item-btn{
+width: 90px;
+display: inline;
+}
+
 .service-item p{
   font-size: 15px;
   font-weight: 600;
 }
+
+.item-btn{
+  border:none;
+  display: none;
+  background-color: transparent;
+  transition: 2s;
+  transform: 2s scale(0.5);
+
+
+}
+.item-btn-div{
+
+  border-radius: 10px;
+  width: fit-content;
+  transition: 2s;
+ 
+}
+
+.advert-div{
+  background-color: rgb(218, 245, 255);
+}
+.advert-div-empty{
+  min-height: 70px;
+}
+
+.partners-div{
+  background-color: white;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.customer-name{
+  font-size: 25px;
+}
+.customer-review{
+  font-size: 20px;
+}
+.customer-handle{
+  font-size: 17px;
+  color: green;
+}
+.customer-outer{
+  background-color: whitesmoke;
+}
+.customer-section{
+  background-color: white;
+}
+.quiz{
+  background-color: rgb(241, 255, 254);
+}
 @media screen and (max-width: 600px) {
   .get-startedpp {
-    background-color: rgb(232, 245, 198);
+    background-color: rgb(46, 196, 241);
   }
 }

@@ -5,7 +5,7 @@ function Landingbanner():JSX.Element {
     return (
         <div className="container ">
             <div className=" landing-banner row ">
-            <div className="landind-left col-md-6 justify-content-center m-auto ">
+            <div className="landind-left col-md-6 justify-content-center m-auto text-center">
                 <h1> Say goodbye to</h1>
                 <h1>market runs</h1>
                 <h1>forever</h1>
