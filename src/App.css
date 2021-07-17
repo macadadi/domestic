@@ -2,6 +2,7 @@ body{
   padding: 0px;
   margin: 0px;
   background-color: rgb(243, 226, 226);
+
 }
 
 .nav-bar{
@@ -171,27 +172,57 @@ display: inline;
 
 .playstore{
   background-color: rgb(247, 242, 244);
-  min-height: 70vh;
+
   padding-top: 230px;
+  padding-bottom: 0px;
 
 
 }
 
 .play-row{
-  min-height: 60vh;
+  min-height: 50vh;
   border-radius: 30px;
-  padding-bottom: 20px;
   overflow: hidden;
   flex-wrap: wrap;
  
 }
 .play-phone{
- display: inline;
+ /* display: inline;
  position: relative;
- left: 60%;
- bottom: 450px;
-}
+ left: 50%;
+ bottom: 450px; */
+ position: absolute;
 
+
+ 
+}
+.p-phone{
+
+
+}
+.hello{
+  background-color: red;
+  position: absolute;
+  min-height: 250px;
+  margin-top: 10px;
+  width: 100%;
+  top: 50px;
+}
+.project-footer{
+min-height: 250px;
+position: relative;
+
+}
+.f-main{
+  background-color: rgb(247, 242, 244);
+}
+.p-footer{
+position: absolute;
+background-color: rgb(247, 242, 244);
+top: 90%;
+min-height: 100px;
+width: 100%;
+}
 
 
 @media screen and (max-width: 800px) {
@@ -199,6 +230,6 @@ display: inline;
     background-color: rgb(46, 196, 241);
   }
   .play-phone{
-    display: none;
+     display: none; 
   }
 }
