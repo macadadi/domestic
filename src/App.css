@@ -9,18 +9,51 @@ body{
 }
 .our-product{
   list-style: none;
+  transition: 2s ease-out;
 }
 .our-product li {
 cursor: pointer;
 padding: 5px;
 padding-bottom: 0px;
 border-radius: 10px;
-transition: 2s ;
 }
 .our-product li:hover{
-background-color: gray;
+color: green;
+font-size: x-large;
+display: block;
 }
 
+
+.pop-item{
+  background-color: green;
+  position: absolute;
+ 
+
+}
+.list-div{
+  background-color: rgb(227, 227, 238);
+}
+.list-div li{
+  list-style: none;
+  font-size: 25px;
+}
+.more-div{
+  background-color: white;
+}
+.pop-up{
+position: fixed;
+left: 45%;
+width: 100%;
+
+display: none;
+border-radius: 20px;
+}
+.services:hover .pop-up{
+  display: block;
+}
+.pop-up:hover{
+display: block;
+}
 .landing-banner h1{
   font-size: 9vmin;
   font-weight: 800;
@@ -131,8 +164,41 @@ display: inline;
 .quiz{
   background-color: rgb(241, 255, 254);
 }
-@media screen and (max-width: 600px) {
+.tooglebtn{
+  cursor: pointer;
+ 
+}
+
+.playstore{
+  background-color: rgb(247, 242, 244);
+  min-height: 70vh;
+  padding-top: 230px;
+
+
+}
+
+.play-row{
+  min-height: 60vh;
+  border-radius: 30px;
+  padding-bottom: 20px;
+  overflow: hidden;
+  flex-wrap: wrap;
+ 
+}
+.play-phone{
+ display: inline;
+ position: relative;
+ left: 60%;
+ bottom: 450px;
+}
+
+
+
+@media screen and (max-width: 800px) {
   .get-startedpp {
     background-color: rgb(46, 196, 241);
+  }
+  .play-phone{
+    display: none;
   }
 }
