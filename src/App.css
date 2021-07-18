@@ -4,6 +4,15 @@ body{
   background-color: rgb(243, 226, 226);
 
 }
+.services-d{
+  text-shadow: 5px 0px 24px rgba(0, 0, 0, 1);
+  width: fit-content;
+  border-bottom: 2px solid ;
+  border-bottom-width: 3px;
+
+  
+  
+}
 
 .nav-bar{
   background-color: rgb(247, 243, 243);
@@ -11,6 +20,7 @@ body{
 .our-product{
   list-style: none;
   transition: 2s ease-out;
+  display: flex;
 }
 .our-product li {
 cursor: pointer;
@@ -218,10 +228,16 @@ position: relative;
 }
 .p-footer{
 position: absolute;
-background-color: rgb(247, 242, 244);
+background-color: whitesmoke;
 top: 90%;
 min-height: 100px;
 width: 100%;
+}
+
+.social a{
+  font-size: 30px;
+  text-decoration: none;
+  list-style: none;
 }
 
 
@@ -232,4 +248,71 @@ width: 100%;
   .play-phone{
      display: none; 
   }
+}
+
+/* mobile screen navbar styling */
+.nav-icon{
+  display: none;
+}
+.mob-nav {
+  display: none;
+}
+.mob{
+  list-style: none;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  transform: 2s ease ;
+}
+.mob-nav, .leftp{
+  display: none;
+  transform: 2s ease ;
+}
+@media screen and (max-width :780px) {
+  .our-product{
+    display: none;
+  }
+
+  .nav-icon{
+    display: inline;
+  }
+  .mob-nav{
+    list-style: none;
+    display: inline;
+    position: absolute;
+    top: 20%;
+    left: -800px;
+    width: 70%;
+    height: 100vh;
+
+   
+  }
+  .leftp{
+    list-style: none;
+    display: inline;
+    position: absolute;
+    top: 20%;
+    left: 0px;
+    width: 70%;
+    height: 100vh;
+  }
+}
+
+
+
+/* services styling */
+
+.list-style{
+  cursor: pointer;
+}
+.list-style h5{
+ 
+  padding: 5px;
+
+}
+
+.list-style h5:hover,.leftp h3:hover{
+  background-color: whitesmoke;
+  transition: 1s;
+  cursor: pointer;
 }

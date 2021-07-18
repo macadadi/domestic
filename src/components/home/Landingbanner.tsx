@@ -1,13 +1,36 @@
-import React from 'react'
+import React,{useEffect, useState} from 'react'
 import phonep from './phonep.svg'
 
 function Landingbanner():JSX.Element {
+    
+    const services : string[] =['Home Cleaning','Laundry','Cooking']
+    const [count,setCount]= useState<number>(0)
+    const scolors :string[] = ['blue','green','orange']
+  
+
+
+    const Elements=()=>{
+        setTimeout(()=>{
+            if(count == 2){
+                setCount( 0)   
+            }
+            else{
+                setCount(count +1)
+            }
+           
+        },2000)
+    }
+ useEffect(()=>{
+     Elements()
+ },[count])
     return (
         <div className="container ">
             <div className=" landing-banner row ">
-            <div className="landind-left col-md-6 justify-content-center m-auto text-center">
+            <div className="landind-left col-md-6 justify-content-center m-auto ">
                 <h1> Say goodbye to</h1>
-                <h1>market runs</h1>
+                <div className="services-d" style={{color:scolors[count]}}>
+                <h1 >{services[count]}</h1>
+                </div>
                 <h1>forever</h1>
 
                <div className="p-div">

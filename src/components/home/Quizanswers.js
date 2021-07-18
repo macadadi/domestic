@@ -1,6 +1,22 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 
-function Quizanswers({item ,more,id}) {
+
+function Quizanswers({item ,id,p,count}) {
+    const [more,setMore]= useState(true)
+
+
+    const Tooglediv =()=>{
+        if(p==id ){
+            setMore(!more)
+        }
+        else{
+            setMore(true)
+          
+        }
+    }
+   useEffect(()=>{
+    Tooglediv()
+   },[count])
     return (
         <div>
         <div className="d-flex justify-content-between">

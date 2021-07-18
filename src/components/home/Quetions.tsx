@@ -1,17 +1,17 @@
 import React,{useState} from 'react'
 import Quizanswers from './Quizanswers'
 
-export type more= {
-    more : boolean
-}
+
 function Quetions() {
     const pp = [1,2,3,4]
-    const [more,setMore]= useState<more | boolean>(false)
+  
+    const [p,setP]= useState<undefined|number>()
+    const [count,setCount]=useState<number>(1)
 
 
-    const setToogle =(id :number) =>{
-   setMore(!more)
-   console.log(id)
+    const productid =(id :number) =>{
+   setP(id)
+   setCount(count +1)
        
     }
     return (
@@ -23,7 +23,7 @@ function Quetions() {
                        <h2>We have Answers.</h2>
                    </div>
                    <div className="col-md-6 pt-4">
-                     {pp.map((item,index)=> <Quizanswers item={setToogle} id={index} more={more} />)}
+                     {pp.map((item,index)=> <Quizanswers item={productid} id={index}  p={p} count={count}/>)}
                      
                       
                        </div>

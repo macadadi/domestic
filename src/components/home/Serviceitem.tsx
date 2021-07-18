@@ -25,7 +25,7 @@ const Serviceitem =({item,index }:Iprop) =>{
           <div  className="p-4 service-item">
           <h2>{emojis[index]}</h2>
             <h3>{item.title}</h3>
-            <p>{item.description}</p>
+            <h5>{item.description}</h5>
 
             <div className="item-btn-div m-2" style={{backgroundColor:`${bgcolor}`}}  >
             <button className="item-btn">explore </button><ArrowForwardIcon />
