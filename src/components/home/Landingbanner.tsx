@@ -3,15 +3,15 @@ import phonep from './phonep.svg'
 
 function Landingbanner():JSX.Element {
     
-    const services : string[] =['Home Cleaning','Laundry','Cooking']
+    const services : string[] =['Home Cleaning','Laundry day',' Cooking ','Market runs']
     const [count,setCount]= useState<number>(0)
-    const scolors :string[] = ['blue','green','orange']
+    const scolors :string[] = ['blue','green','orange','purple']
   
 
 
     const Elements=()=>{
         setTimeout(()=>{
-            if(count == 2){
+            if(count == services.length-1){
                 setCount( 0)   
             }
             else{
@@ -30,16 +30,16 @@ function Landingbanner():JSX.Element {
                 <h1> Say goodbye to</h1>
                 <div className="services-d" style={{color:scolors[count]}}>
                 <h1 >{services[count]}</h1>
+            
                 </div>
                 <h1>forever</h1>
 
                <div className="p-div">
-               <p>We take care of your chores, so you can get more </p>
-                 <p> out of life. It's what you've always dreamed of.</p>
+               <h4>We take care of your chores, so you can get more </h4>
+                 <h4> out of life. It's what you've always dreamed of.</h4>
                </div>
                  <div>
                      <button className="btn-start p-3">Start Your new Life</button>
-                     <button className="btn-watch">Icon Watch video</button>
 
                  </div>
             </div>
