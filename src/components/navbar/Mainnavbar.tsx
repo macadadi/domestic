@@ -7,6 +7,10 @@ import {Link} from 'react-router-dom'
 function Mainnavbar() : JSX.Element {
     const [dropicon,setDropicon] = useState<boolean>(false)
 
+    const handleclose =()=>{
+        setDropicon(!dropicon)
+    }
+
 
     return (
    <div className="d-flex nav-bar sticky-top justify-content-between p-2 pt-0 pb-0 m-auto">
@@ -50,11 +54,11 @@ function Mainnavbar() : JSX.Element {
 
            <div className=" ">
                <div className=" p-2">
-                  <div className="m-2 p-2 list-style" >
-                    <h5>Loundry</h5>
-                    <h5>Cleaning</h5>
-                    <h5>Gift</h5>
-                    <h5>Food</h5>
+                  <div className="m-2 p-2 list-style"  >
+                  <Link to="/services/loundry" onClick={handleclose}> <h5>Loundry</h5></Link>
+                    <Link to="/services/cleaning" onClick={handleclose}> <h5>Cleaning</h5></Link>
+                    <Link to="/services/gift" onClick={handleclose}> <h5>Gift</h5></Link>
+                    <Link to="/services/food" onClick={handleclose}> <h5>Food</h5></Link>
                     </div >
 
             
@@ -62,7 +66,7 @@ function Mainnavbar() : JSX.Element {
            
        </div>
           </li>
-          <h3><li>Companies</li></h3>
+          <Link to="/" onClick={handleclose}> <h3><li>Companies</li></h3></Link>
           <h3><li>Pricing</li></h3>
           <button className="btn-start p-1 get-started">Get Started</button>
       </ul>
