@@ -39,7 +39,7 @@ function Landingbanner():JSX.Element {
                  <h4> out of life. It's what you've always dreamed of.</h4>
                </div>
                  <div>
-                     <button className="btn-start p-3">Start Your new Life</button>
+                     <button className="btn-start p-3 text-center">Start Your new Life</button>
 
                  </div>
             </div>

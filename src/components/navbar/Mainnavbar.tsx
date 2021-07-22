@@ -1,6 +1,7 @@
 import ViewHeadlineRoundedIcon from '@material-ui/icons/ViewHeadlineRounded';
 import CloseRoundedIcon from '@material-ui/icons/CloseRounded';
 import { useState } from 'react';
+import {Link} from 'react-router-dom'
 
 
 function Mainnavbar() : JSX.Element {
@@ -25,10 +26,10 @@ function Mainnavbar() : JSX.Element {
                </div>
                <div className="list-div p-2">
                   <div className="m-2 p-2 list-style" >
-                    <h5>Loundry</h5>
-                    <h5>Cleaning</h5>
-                    <h5>Gift</h5>
-                    <h5>Food</h5>
+                   <Link to="/services/loundry"> <h5>Loundry</h5></Link>
+                   <Link to="/services/cleaning"> <h5>Cleaning</h5></Link>
+                   <Link to="/services/gift"> <h5>Gift</h5></Link>
+                   <Link to="/services/food"> <h5>Food</h5></Link>
                     </div >
                </div>
             
@@ -36,7 +37,7 @@ function Mainnavbar() : JSX.Element {
            
        </div>
           </li>
-          <h3><li>Companies</li></h3>
+         <Link to="/"> <h3><li>Companies</li></h3></Link>
           <h3><li>Pricing</li></h3>
           <button className="btn-start p-1 get-started">Get Started</button>
       </ul>

@@ -301,6 +301,10 @@ width: 100%;
     text-align: center;
    
   }
+
+  .right-core{
+    display: none;
+  }
 }
 
 
@@ -320,4 +324,26 @@ width: 100%;
   background-color: whitesmoke;
   transition: 1s;
   cursor: pointer;
+}
+
+
+
+/* core services section */
+
+.core{
+  min-height: 90vh;
+  align-items: center;
+}
+.core h1{
+  font-weight: 600;
+ 
+  font-family: 'Times New Roman', Times, serif;
+}
+.core h3{
+  font-weight: 400;
+}
+
+.core-core{
+  min-height: 90vh;
+  background-color:rgb(253, 251, 251);
 }

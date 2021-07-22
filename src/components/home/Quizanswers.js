@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react'
-
+import CloseOutlinedIcon from '@material-ui/icons/CloseOutlined';
+import MaximizeOutlinedIcon from '@material-ui/icons/MaximizeOutlined';
 
 function Quizanswers({item ,id,p,count}) {
     const [more,setMore]= useState(true)
@@ -20,17 +21,18 @@ function Quizanswers({item ,id,p,count}) {
     return (
         <div>
         <div className="d-flex justify-content-between">
-            <h4>What is Eden ?</h4>
-           <div className="tooglebtn" onClick={()=>item(id)}> {more ?  <h4>X</h4> :  <h4>-</h4>}</div>
+            <h4>Who We Are ?</h4>
+           <div className="tooglebtn" onClick={()=>item(id)}> {more ? <CloseOutlinedIcon /> :  < MaximizeOutlinedIcon />}</div>
            
         </div>
         <div style={{display:`${more ? 'none' : 'inline'}`}}>
             <p>
-            When you sign up on Eden, you can configure a plan that fits your needs, 
-            then you get assigned a Gardener to help you manage your home. The app takes
-             your food, laundry, and home cleaning needs and turns them into tasks that our
-              Gardeners attend to on schedule. The only finger you'll
-             be lifting is the one scrolling through the app, monitoring progress.
+            Don't focus on the failures of yesterday, start today with positive thoughts and
+            expectations.r home. The app takes
+            Remember, today is the tomorrow you worried about yesterday. DALE CARNEGIE. 
+            Work for that feeling that you have accomplished something…
+            Don't focus on the failures of yesterday, start today with positive thoughts and
+            expectations.r home. The app takes
             </p>
         </div>
     </div>

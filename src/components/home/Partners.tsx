@@ -1,8 +1,7 @@
 import React from 'react'
 import paystack from './paystack.png'
 import flutterwave from './flutterwave.png'
-import cowry from './cowry.png'
-import piggivest from './piggivest.png'
+
 
 function Partners() {
     return (
